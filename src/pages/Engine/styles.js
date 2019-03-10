@@ -25,6 +25,7 @@ export const EngineListContainer = styled.div`
 
 export const EngineImage = styled.img`
   object-fit: contain
+  margin-bottom: 20px;
   @media (max-width: 480px) {
     width: 180px
     align-self: center;
