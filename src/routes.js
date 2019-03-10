@@ -1,11 +1,40 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import Loadable from 'react-loadable';
 
-import Home from './pages/Home';
-import Engine from './pages/Engine';
-import Wheels from './pages/Wheels';
-import Result from './pages/Result';
-import Color from './pages/Color';
+const loading = () => (
+  <div>Loading...</div>
+)
+
+const Home = Loadable({
+  loader: () =>
+    import('./pages/Home'),
+  loading
+});
+
+const Engine = Loadable({
+  loader: () =>
+    import('./pages/Engine'),
+  loading
+});
+
+const Wheels = Loadable({
+  loader: () =>
+    import('./pages/Wheels'),
+  loading
+});
+
+const Result = Loadable({
+  loader: () =>
+    import('./pages/Result'),
+  loading
+});
+
+const Color = Loadable({
+  loader: () =>
+    import('./pages/Color'),
+  loading
+});
 
 const Routes = (props) => (
   <Switch>

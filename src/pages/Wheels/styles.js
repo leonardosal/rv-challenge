@@ -9,7 +9,7 @@ export const WheelsContent = styled.div`
   position: relative;
   margin: 0 auto;
   width: 100vw;
-  height: calc(100vh - 140px);
+  height: calc(100vh - 70px);
   display: flex;
   flex-direction: column;
 `;
