@@ -29,3 +29,8 @@ https://rv-challenge.netlify.com/
 * Styled-Components
   * Por que?
     - Por conseguir usar javascript em conjunto, por resolver os prefixos dos navegadores, e pela integração com o react.
+
+## Comentários sobre a solução
+
+* Otimizei o tamanho das imagens e coloquei em uma hospedagem própria para imagens com isso houve um ganho em velocidade ao abrir a página.
+* Usei o React-Lodable para dividir cada página em um bundle diferente fazendo ele carregar somente os bundle que a página necessita
