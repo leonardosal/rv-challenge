@@ -57,6 +57,9 @@ export const Price = styled(Item)`
   ${Text} {
     color: #AB1725;
     font-size: 32px;
+    @media (max-width: 480px) {
+      font-size: 24px;
+    }
   }
 `;
 

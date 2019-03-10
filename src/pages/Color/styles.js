@@ -10,6 +10,7 @@ export const ColorContent = styled.div`
   display: flex;
   @media (max-width: 480px) {
     flex-direction: column;
+    width: 80vw;
   }
 `;
 
@@ -29,13 +30,12 @@ export const ImageContainer = styled.div`
   align-items: flex-start;
   justify-content: center;
   text-align: left;
-  flex-grow: 1;
 `;
 
 export const Image = styled.img`
   @media (max-width: 480px) {
-    align-self: center
-    width: 100%
+    width: 80%;
+    align-self: center;
   }
 `;
 
@@ -99,10 +99,16 @@ export const ColorName = styled.h3`
   margin: 0;
   font-weight: 300;
   font-size: 24px;
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 export const ColorPrice = styled.h4`
   margin: 0;
   font-weight: 400;
   font-size: 24px;
   color: #AB1725
+  @media (max-width: 480px) {
+     font-size: 16px;
+   }
 `;
