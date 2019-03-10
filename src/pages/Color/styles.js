@@ -6,7 +6,7 @@ export const ColorContent = styled.div`
   width: 60vw;
   margin: 0 auto;
   justify-content: space-around;
-  height: calc(100vh - 140px);
+  height: calc(100vh - 70px);
   display: flex;
   @media (max-width: 480px) {
     flex-direction: column;
@@ -16,6 +16,7 @@ export const ColorContent = styled.div`
 export const ColorOptionsContainer = styled.div`
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   margin-top: 100px
   @media (max-width: 480px) {
     margin-top: 0px
@@ -28,6 +29,7 @@ export const ImageContainer = styled.div`
   align-items: flex-start;
   justify-content: center;
   text-align: left;
+  flex-grow: 1;
 `;
 
 export const Image = styled.img`
@@ -47,7 +49,7 @@ export const Title = styled.h1`
   margin-bottom: 0;
   color: #0F1C2D
   @media (max-width: 480px) {
-    font-size: 20px;
+    font-size: 18px;
   }
 `;
 
@@ -80,6 +82,13 @@ export const ColorItem = styled.li`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  @media (max-width: 480px) {
+    width: 32px;
+    height: 32px;
+    img {
+      width: 32px;
+    }
+  }
 `;
 
 export const ImageDescription = styled.div`

@@ -4,13 +4,12 @@ import { Link } from 'react-router-dom'
 export const BarContainer = styled.div`
   background: white;
   box-shadow: 8px 0 47px 0 rgba(0,0,0,0.08);
-  display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   bottom: 0;
   width: 100vw;
-  opacity: ${props => props.show ? '1' : '0'};
+  display: ${props => props.show ? 'flex' : 'none'};
 `;
 
 export const BarContent = styled.div`

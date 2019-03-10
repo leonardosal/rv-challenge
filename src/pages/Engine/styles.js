@@ -18,6 +18,7 @@ export const EngineContent = styled.div`
 export const EngineListContainer = styled.div`
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   @media (max-width: 480px) {
     align-self: center;
   }
