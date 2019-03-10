@@ -48,7 +48,7 @@ export const BannerSubTitle = styled.h2`
   text-transform: uppercase;
   letter-spacing: 8px;
   @media (max-width: 480px) {
-    font-size: 72px;
+    font-size: 50px;
     line-height: 100px;
   }
 `;

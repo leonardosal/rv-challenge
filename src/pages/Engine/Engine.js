@@ -9,7 +9,8 @@ import {
   MainLabel,
   ListItem,
   EngineContent,
-  EngineListContainer
+  EngineListContainer,
+  EngineImageContainer
 } from './styles'
 
 class Engine extends PureComponent {
@@ -25,7 +26,9 @@ class Engine extends PureComponent {
     return (
       <EngineContainer>
         <EngineContent>
-          <EngineImage src={engine.image} alt="Image of the car engine" />
+          <EngineImageContainer>
+            <EngineImage src={engine.image} alt="car engine" />
+          </EngineImageContainer>
           <EngineListContainer>
             <EngineTitle>Engine</EngineTitle>
             <EngineList>

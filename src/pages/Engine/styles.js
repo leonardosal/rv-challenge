@@ -5,12 +5,14 @@ export const EngineContainer = styled.div`
 
 export const EngineContent = styled.div`
   margin: 0 auto;
-  height: calc(100vh - 140px);
+  height: calc(100vh - 70px);
   display: flex;
   padding: 0px 20%;
   align-items: flex-start;
   justify-content: center;
   @media (max-width: 480px) {
+    padding: 0px
+    align-items: center;
     flex-direction: column;
   }
 `;
@@ -20,17 +22,21 @@ export const EngineListContainer = styled.div`
   flex-direction: column;
   flex-grow: 1;
   @media (max-width: 480px) {
-    align-self: center;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 60px;
   }
 `
+export const EngineImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+`;
 
 export const EngineImage = styled.img`
   object-fit: contain
-  margin-bottom: 20px;
   @media (max-width: 480px) {
     width: 180px
-    align-self: center;
-    margin: -75px 0px;
     transform: rotate(90deg);
   }
 `;
@@ -51,7 +57,7 @@ export const EngineList = styled.ul`
   padding: 0;
   margin: 0;
   @media (max-width: 480px) {
-    width: 400px;
+    width: 300px;
   }
 `;
 
@@ -99,5 +105,11 @@ export const ListItem = styled.li`
   }
   @media (max-width: 480px) {
     margin-bottom: 24px;
+    ${Label} {
+      font-size: 14px;
+    }
+    ${MainLabel} {
+      font-size: 18px;
+    }
   }
 `;
