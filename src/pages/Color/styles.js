@@ -34,7 +34,7 @@ export const ImageContainer = styled.div`
 
 export const Image = styled.img`
   @media (max-width: 480px) {
-    width: 80%;
+    width: 65%;
     align-self: center;
   }
 `;
