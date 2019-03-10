@@ -7,7 +7,7 @@ const Logo = styled.img`
 `
 export const LogoLink = ({ src, ...props }) => (
   <Link {...props}>
-    <Logo src={src} />
+    <Logo src={src} alt="Logo" />
   </Link>
 );
 
