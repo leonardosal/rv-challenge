@@ -19,6 +19,11 @@ export const BarContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 480px) {
+    width: 100vw;
+    margin: 0px;
+  }
 `;
 
 export const BarSection = styled.div`
@@ -26,7 +31,6 @@ export const BarSection = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-grow: 1
-  padding: 0px 64px;
 `;
 
 export const Title = styled.h3`
